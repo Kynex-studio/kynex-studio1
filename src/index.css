@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html[lang='ar'] {
+  --font-display: 'El Messiri', sans-serif;
+  --font-body: 'Cairo', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-navy-950 text-ivory-text antialiased font-body;
+}
+
+::selection {
+  background: rgba(201, 163, 95, 0.35);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #C9A35F;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Subtle paper-grain texture used behind the hero, echoing the brand plate */
+.grain-surface {
+  position: relative;
+  isolation: isolate;
+}
+.grain-surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: theme('backgroundImage.grain');
+  background-size: 140px 140px;
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes mark-spin {
+  to { transform: rotate(360deg); }
+}
+.mark-spin-slow {
+  animation: mark-spin 22s linear infinite;
+}
+
+.rule-gold {
+  background: linear-gradient(90deg, transparent, #C9A35F, transparent);
+  height: 1px;
+}
