@@ -5,8 +5,8 @@ const LanguageContext = createContext(null)
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(() => {
-    if (typeof window === 'undefined') return 'ar'
-    return localStorage.getItem('kynex-lang') || 'ar'
+    if (typeof window === 'undefined') return 'en'
+    return localStorage.getItem('kynex-lang') || 'en'
   })
 
   useEffect(() => {
