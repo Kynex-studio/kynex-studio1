@@ -306,7 +306,7 @@ export const content = {
     about: {
       eyebrow: 'About',
       title: 'An independent studio, with personal attention',
-      body: "Kynex is an independent digital studio, run with the close attention of one person who cares about every detail in every project. We don't take on many projects at once — we'd rather take on fewer, at a higher standard, with full attention to each client. The goal isn't just a beautiful website; it's a digital tool that actually serves your business and holds up for years.",
+      body: "Kynex is an independent digital studio, driven by close attention to every detail in every project. We don’t take on many projects at once — we’d rather take on fewer, to a higher standard, with our full attention on each client. The goal isn’t just a beautiful website; it’s a digital tool that genuinely serves your business and stands the test of time.",
       principles: [
         "Every project starts from a real understanding of the client's goal, not a template",
         'Code quality and performance matter to us as much as visual design',
