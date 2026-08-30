@@ -1,27 +1,40 @@
-// ============================================================================
-// Kynex — Projects
-//
-// To add a new project later, copy the Nova object below, edit its fields,
-// and add it to the array. It will appear automatically in the "Work"
-// grid — cards are laid out side by side and the grid grows on its own as
-// you add more.
-//
-// Fields:
-//   id      — unique slug, lowercase, no spaces (e.g. 'nova', 'atlas-app')
-//   name    — project name shown on the card
-//   year    — year the project shipped
-//   tags    — short list of what the project involved (keep it to 2-3)
-//   image   — path to a real screenshot/cover photo, e.g. '/images/work/nova.jpg'.
-//             Put the image file in `public/images/work/`. Leave as `null`
-//             to fall back to an abstract gradient cover instead.
-//   link    — the live project URL, e.g. 'https://nova-cafe-gamma.vercel.app'.
-//             Leave as `null` to hide the "visit site" button on that card.
-//   cover   — two hex colors used for the abstract gradient cover ONLY
-//             when `image` is null. Ignored once you add a real image.
-//   ar / en — bilingual copy for that project (tagline + role)
-// ============================================================================
-
 export const projects = [
+{
+    id: 'gs-fitness',
+    name: 'GS Fitness',
+    year: '2026',
+    tags: ['Web Design', 'Fitness'],
+    image: '/images/work/gs-fitness.jpg',
+    link: 'https://gs-sandy-three.vercel.app/', // ضع رابط الموقع هنا
+    cover: { from: '#111827', to: '#EF4444' },
+    ar: {
+      tagline: 'موقع احترافي لمركز تدريب ولياقة بدنية — برامج التدريب والأجواء الخارجية في مكان واحد.',
+      role: 'تصميم وتطوير الموقع',
+    },
+    en: {
+      tagline: "A professional website for an outdoor fitness and bootcamp training center.",
+      role: 'Website design & development',
+    },
+  },
+
+  {
+    id: 'Akimi',
+    name: 'Akimi',
+    year: '2026',
+    tags: ['Web Design', ' Aesthetic Clinic'],
+    image: '/images/work/akimi.jpg',
+    link: 'https://akimi-one.vercel.app/',
+    cover: { from: '#991B1B', to: '#1F2937' },
+    ar: {
+    tagline: 'منصة رقمية لعيادة تجميل وعناية بالبشرة — استعراض العلاجات وحجز الاستشارات بسهولة.',
+    role: 'تصميم وتطوير الموقع',
+    },
+    en: {
+      tagline: "A digital platform for an aesthetic and dermatology clinic — treatments and consultations.",
+      role: 'Website design & development',
+    },
+  },
+
   {
     id: 'nova',
     name: 'Nova',
@@ -40,3 +53,6 @@ export const projects = [
     },
   },
 ]
+
+
+
