@@ -247,7 +247,7 @@ export const content = {
     work: {
       eyebrow: 'Our Work',
       title: 'Selected Projects',
-      intro: '.',
+      intro: '',
       viewProject: 'View details',
       visitSite: 'Visit website',
       role: 'Role',
