@@ -247,7 +247,7 @@ export const content = {
     work: {
       eyebrow: 'Our Work',
       title: 'Selected Projects',
-      intro: 'One project so far — and a first project is always the one that matters most. New work is added here as each project ships.',
+      intro: '.',
       viewProject: 'View details',
       visitSite: 'Visit website',
       role: 'Role',
