@@ -1,7 +1,9 @@
 import React from 'react'
 import Mark from './Mark.jsx'
+import { useLanguage } from '../../context/LanguageContext.jsx'
 
 export default function Logo({ size = 'nav', showTagline = false }) {
+  const { t } = useLanguage()
   const isHero = size === 'hero'
   const wordSize = isHero ? 'text-[13vw] sm:text-6xl md:text-7xl' : 'text-2xl'
   const markSize = isHero ? 56 : 22
@@ -22,7 +24,7 @@ export default function Logo({ size = 'nav', showTagline = false }) {
             isHero ? 'text-xs sm:text-sm tracking-widest2' : 'text-[10px] tracking-widest2'
           }`}
         >
-          Digital Studio
+          {t.brand.tagline}
         </span>
       )}
     </span>

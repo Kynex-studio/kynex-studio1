@@ -32,6 +32,7 @@ export const content = {
       openMenu: 'فتح القائمة',
       closeMenu: 'إغلاق القائمة',
       scrollHint: 'استمر بالتمرير',
+      skipIntro: 'تخطي',
     },
     hero: {
       eyebrow: 'استوديو تصميم وتطوير رقمي',
@@ -212,6 +213,7 @@ export const content = {
       openMenu: 'Open menu',
       closeMenu: 'Close menu',
       scrollHint: 'Keep scrolling',
+      skipIntro: 'Skip',
     },
     hero: {
       eyebrow: 'Design & Development Studio',

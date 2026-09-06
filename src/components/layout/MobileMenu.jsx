@@ -8,7 +8,8 @@ export default function MobileMenu({ open, onClose }) {
   const { t } = useLanguage()
 
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : ''
+    if (!open) return
+    document.body.style.overflow = 'hidden'
     return () => {
       document.body.style.overflow = ''
     }
